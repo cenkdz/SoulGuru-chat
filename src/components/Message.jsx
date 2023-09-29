@@ -6,7 +6,7 @@ const Message = ({message}) => {
     const {currentUser} = UserAuth()
   return (
     <div>
-        <div className={`chat ${message.uid === currentUser.uid ? "chat-start" : "chat-start"}`}>
+        <div className={`chat ${message.uid === currentUser.uid ? "chat-end" : "chat-end"}`}>
   <div className="chat-image avatar">
     <div className="w-10 rounded-full">
       <img src={message.avatar} referrerPolicy="no-referrer"/>
